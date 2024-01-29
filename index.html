@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function validateForm() {
+        var emailInput = document.getElementById("email1").value;
+        var passInput = document.getElementById("pass1").value;
+        var emailErrorMsg = document.getElementById("emailErrorMsg");
+        var passErrorMsg = document.getElementById("passErrorMsg");
+        if (emailInput.trim() === "") {
+          emailErrorMsg.style.display = "block";
+        } else {
+          emailErrorMsg.style.display = "none";
+        }
+
+        if (passInput.trim() === "") {
+          passErrorMsg.style.display = "block";
+        } else {
+          passErrorMsg.style.display = "none";
+          // Add code to submit the form or perform other actions
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bachground-full">
+      <div class="box">
+        <div>
+          <h1>Welcome</h1>
+        </div>
+        <div class="login1">
+          <form action="result.html" class="">
+            <label for="Email">Email</label>
+            <br />
+            <input type="email" id="email1" />
+            <span class="msg" id="emailErrorMsg"
+              >Valid Email Id is required</span
+            >
+            <br />
+            <label for="password">password</label>
+            <br />
+            <input type="password" id="pass1" />
+            <span class="msg" id="passErrorMsg">Password is required</span>
+            <br />
+            <br />
+            <button type="button" id="but1" onclick="validateForm()">
+              LogIn
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

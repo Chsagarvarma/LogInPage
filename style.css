@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bachground-full{
+    background-image:url("pexels1.jpeg");
+    width: 100%;
+    height: 100vh;  
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color:rgba(3, 3, 3, 0.39);
+    box-shadow: 0 0 15px 0 rgba(72, 36, 36, 0.55);
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.login1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+#email1,#pass1,#but1{
+    background-color:rgba(226, 211, 222, 0.39) ;
+    width: 580px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    margin: 8px;
+
+}
+
+span{
+    color: red;
+    margin-left: 25px;
+    display: none;
+    font-size: .75rem;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 900;
+}
+label{
+    color: white;
+    margin-left: 25px;
+}
+#but1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
